@@ -1,4 +1,9 @@
-export default function getStats(data) {
+type Result = {
+    min: number | null,
+    max: number | null,
+    avg: number | null
+}
+export default function getStats(data: Array<number>): Result {
     if (data.length === 0)
         return {
             min: null,

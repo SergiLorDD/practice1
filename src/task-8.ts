@@ -1,5 +1,5 @@
 
-export default function getTopLetter(str) {
+export default function getTopLetter(str: string): string {
     const letterCounter = new Map()
     for (const letter of str.split('')) {
         if(letterCounter.has(letter)) {

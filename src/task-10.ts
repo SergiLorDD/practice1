@@ -1,4 +1,4 @@
-export default function convertToRoman(n) {
+export default function convertToRoman(n: number): string {
     const roman = {
         M: 1000,
         CM: 900,
